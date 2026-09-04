@@ -87,7 +87,7 @@ h2 { margin: 0; color: var(--blue); font-size: clamp(1.45rem, 2.8vw, 2rem); line
 .factor-icon { display: inline-grid; width: 30px; height: 30px; margin-right: 7px; place-items: center; border-radius: 50%; color: var(--white); vertical-align: middle; }
 .factor-icon svg { width: 17px; height: 17px; fill: currentColor; }
 .temp-icon { background: var(--coral); }
-.temp-icon svg { width: 16px; height: 16px; }
+.temp-icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .precip-icon { background: var(--cyan); }
 .segmented { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid #8ebdcc; }
 .segmented button { min-height: 46px; padding: 8px; border: 0; border-right: 1px solid #8ebdcc; background: var(--white); color: var(--blue); cursor: pointer; font-size: .88rem; font-weight: 750; }
