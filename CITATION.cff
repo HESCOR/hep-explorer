@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Interactive Human Existence Potential"
+type: software
+authors:
+  - family-names: "Wegener"
+    given-names: "Christian"
+    affiliation: "University of Cologne"
+  - family-names: "Schlüter"
+    given-names: "Philipp"
+    orcid: "https://orcid.org/0009-0001-7947-5222"
+    affiliation: "University of Cologne"
+  - family-names: "Hilpert"
+    given-names: "Johanna"
+    orcid: "https://orcid.org/0000-0002-2144-2372"
+    affiliation: "University of Cologne"
+repository-code: "https://github.com/HESCOR/hep-explorer"
+url: "https://hescor.github.io/hep-explorer/"
+version: "1.0.0"
+date-released: "2026-09-04"

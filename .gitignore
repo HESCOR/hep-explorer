@@ -1,0 +1,9 @@
+# Original analysis inputs and generated source plots are intentionally local.
+*.nc
+*.py
+README.txt
+/plots/
+
+# Local and operating-system files
+.DS_Store
+__pycache__/

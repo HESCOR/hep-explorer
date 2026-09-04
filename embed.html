@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Embeddable interactive visualization of Human Existence Potential (HEP) for different temperature and precipitation preferences.">
+  <meta name="theme-color" content="#f5f8f9">
+  <title>Human Existence Potential · Interactive map</title>
+  <link rel="icon" href="assets/hescor_logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="embedded">
+  <main class="page">
+    <h1 class="visually-hidden">Interactive Human Existence Potential map</h1>
+    <section class="explorer" aria-labelledby="explorer-title">
+      <div class="controls-card">
+        <div class="section-heading">
+          <p class="step">Your selection</p>
+          <h2 id="explorer-title">Set climate preferences</h2>
+          <p>Choose a preferred level for both climate factors. The map updates instantly.</p>
+        </div>
+
+        <fieldset class="choice-group" data-variable="temp">
+          <legend><span class="factor-icon temp-icon" aria-hidden="true">°</span> Temperature</legend>
+          <div class="segmented">
+            <button type="button" data-value="low" aria-pressed="false">Low</button>
+            <button type="button" data-value="mid" aria-pressed="true">Medium</button>
+            <button type="button" data-value="high" aria-pressed="false">High</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="choice-group" data-variable="precip">
+          <legend><span class="factor-icon precip-icon" aria-hidden="true">●</span> Precipitation</legend>
+          <div class="segmented">
+            <button type="button" data-value="low" aria-pressed="false">Low</button>
+            <button type="button" data-value="mid" aria-pressed="true">Medium</button>
+            <button type="button" data-value="high" aria-pressed="false">High</button>
+          </div>
+        </fieldset>
+      </div>
+
+      <figure class="map-card" aria-labelledby="map-title">
+        <div class="map-heading">
+          <div>
+            <p class="step">Human Existence Potential</p>
+            <h2 id="map-title">Medium temperature · Medium precipitation</h2>
+          </div>
+        </div>
+        <div class="image-wrap">
+          <img id="hep-map" src="assets/plots/HEP_midTemp_midPrecip.webp" width="1480" height="1373" alt="HEP map for medium temperature and medium precipitation">
+        </div>
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
