@@ -25,13 +25,13 @@ It can be embedded using an `iframe`, for example:
 ></iframe>
 ```
 
-The application runs entirely in the browser and requires neither a build step nor external JavaScript libraries. Maps are displayed as optimized WebP files, while the underlying PDF files remain available in the repository.
+The application runs entirely in the browser and requires neither a build step nor external JavaScript libraries. The nine maps are provided as optimized WebP assets.
 
 ## Scientific background
 
 This project presents a simplified approximation of HEP based on mean temperature (°C) and annual precipitation (mm). The climate data come from ERA-Interim and cover the period from 1980 to 2009.
 
-`cut_EU_averaging.py` extracts and aggregates the values stored in `Average_ERA_interim_temp_precip.nc`. `plots.py` uses them to produce preference distributions and the nine HEP maps. The results are a simplified model visualization, not a prediction of individual quality of life.
+The results are a simplified model visualization, not a prediction of individual quality of life.
 
 ## Run locally
 
@@ -48,7 +48,7 @@ The workflow in `.github/workflows/pages.yml` publishes the static website after
 ## Contributors
 
 - Christian Wegener — Concept
-- Philipp Schlüter — Interactive GitHub Page development
 - Johanna Hilpert — Concept
+- Philipp Schlüter — Interactive GitHub Page development
 
 All contributors are affiliated with the University of Cologne. Citation metadata are available in [`CITATION.cff`](CITATION.cff).
